@@ -19,6 +19,25 @@ class MyApp extends StatelessWidget {
                 //backgroundImage: AssetImage('images/diamond.png'),
                 backgroundImage: AssetImage('images/trina.jpg'),
               ),
+              Text(
+                'Trina Shih',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Sr. Solutions Architect',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20.0,
+                  color: Colors.teal[100],
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+                ),
+              ),
             ],
           ),
         ),
