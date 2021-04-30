@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -40,6 +41,13 @@ class MyApp extends StatelessWidget {
               ),
               //Container(  Update Container to Card(), no Padding property
               // for card, we need to add Padding class to our Row().
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               Card(
                 color: Colors.white,
                 //padding: EdgeInsets.all(10.0),
@@ -47,29 +55,21 @@ class MyApp extends StatelessWidget {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child: Padding(
-                  padding: EdgeInsets.all(25.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        //https://fonts.google.com/icons
-                        //Icons.shopping_cart,
-                        Icons.phone,
-                        //size: 100.0,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+1 xxx xxx xxxx',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ],
+                child: ListTile(
+                  leading: Icon(
+                    //https://fonts.google.com/icons
+                    //Icons.shopping_cart,
+                    Icons.phone,
+                    //size: 100.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+1 xxx xxx xxxx',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                    ),
                   ),
                 ),
               ),
@@ -81,27 +81,22 @@ class MyApp extends StatelessWidget {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      //https://fonts.google.com/icons
-                      //Icons.shopping_cart,
-                      Icons.email,
-                      //size: 100.0,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    //https://fonts.google.com/icons
+                    //Icons.shopping_cart,
+                    Icons.email,
+                    //size: 100.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'xxx.xxx@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'xxx.xxx@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
